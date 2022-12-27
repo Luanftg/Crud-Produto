@@ -1,8 +1,17 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Principal";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">Cadastro de Produtos</h1>
+    <p>Clique <a href="/produtos">Aqui</a> para entrar.</p>
+</div>
+
+<hr>
+
+<div class="text-center">
+    <p>Quantidade de Itens em estoque: @ViewBag.quantidadeDeItensNoEstoque</p>
+    <p>Quantidade de Produtos Vencidos</p>
+    <p>Quantidade de Produtos para vencer daqui a 3 dias</p>
+    <p>Quantidade de Produtos totais: @ViewBag.quantidadeDeProdutos</p>
 </div>

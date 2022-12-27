@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "web/1.0.0": {
         "dependencies": {
+          "database": "1.0.0",
           "database.mysql": "1.0.0",
           "negocio": "1.0.0"
         },
@@ -222,6 +223,9 @@
         }
       },
       "negocio/1.0.0": {
+        "dependencies": {
+          "database": "1.0.0"
+        },
         "runtime": {
           "negocio.dll": {}
         }

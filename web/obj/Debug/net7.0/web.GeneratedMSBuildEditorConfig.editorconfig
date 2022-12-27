@@ -9,37 +9,45 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = web
 build_property.RootNamespace = web
-build_property.ProjectDir = c:\Users\Luan Fonseca\Desktop\Codigo do Futuro\Crud-Produto\web\
+build_property.ProjectDir = C:\Users\Luan Fonseca\Desktop\Codigo do Futuro\Crud-Produto\web\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\Luan Fonseca\Desktop\Codigo do Futuro\Crud-Produto\web
+build_property.MSBuildProjectDirectory = C:\Users\Luan Fonseca\Desktop\Codigo do Futuro\Crud-Produto\web
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/Luan Fonseca/Desktop/Codigo do Futuro/Crud-Produto/web/Views/Home/Index.cshtml]
+[C:/Users/Luan Fonseca/Desktop/Codigo do Futuro/Crud-Produto/web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Luan Fonseca/Desktop/Codigo do Futuro/Crud-Produto/web/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Luan Fonseca/Desktop/Codigo do Futuro/Crud-Produto/web/Views/Produtos/Cadastrar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcQ2FkYXN0cmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Luan Fonseca/Desktop/Codigo do Futuro/Crud-Produto/web/Views/Shared/Error.cshtml]
+[C:/Users/Luan Fonseca/Desktop/Codigo do Futuro/Crud-Produto/web/Views/Produtos/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Luan Fonseca/Desktop/Codigo do Futuro/Crud-Produto/web/Views/Produtos/Novo.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHV0b3NcTm92by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Luan Fonseca/Desktop/Codigo do Futuro/Crud-Produto/web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Luan Fonseca/Desktop/Codigo do Futuro/Crud-Produto/web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Luan Fonseca/Desktop/Codigo do Futuro/Crud-Produto/web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Luan Fonseca/Desktop/Codigo do Futuro/Crud-Produto/web/Views/_ViewImports.cshtml]
+[C:/Users/Luan Fonseca/Desktop/Codigo do Futuro/Crud-Produto/web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Luan Fonseca/Desktop/Codigo do Futuro/Crud-Produto/web/Views/_ViewStart.cshtml]
+[C:/Users/Luan Fonseca/Desktop/Codigo do Futuro/Crud-Produto/web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/Luan Fonseca/Desktop/Codigo do Futuro/Crud-Produto/web/Views/Shared/_Layout.cshtml]
+[C:/Users/Luan Fonseca/Desktop/Codigo do Futuro/Crud-Produto/web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-vpkz4e1jaw
