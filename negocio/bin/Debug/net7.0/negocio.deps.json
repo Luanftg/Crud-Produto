@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v7.0": {
       "negocio/1.0.0": {
+        "dependencies": {
+          "database": "1.0.0"
+        },
         "runtime": {
           "negocio.dll": {}
+        }
+      },
+      "database/1.0.0": {
+        "runtime": {
+          "database.dll": {}
         }
       }
     }
   },
   "libraries": {
     "negocio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "database/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -1,11 +1,12 @@
 namespace negocio.models;
 public record Produto
-
 {
-    public string Id {get;set;} = default!;
+
+    public int Id {get;set;} = default!;
     public string Nome {get;set;} = default!;
     public string Descricao {get;set;} = default!;
-    public DateTime Dt_de_validade {get;set;}
-    public DateTime Dt_de_criacao {get;set;}
     public int Quantidade {get;set;}
+    public DateTime data_vencimento {get;set;}
+    public DateTime created_at {get;set;}
+    public DateTime updated_at {get;set;}
 }

@@ -144,7 +144,11 @@
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\Luan Fonseca\\Desktop\\Codigo do Futuro\\Crud-Produto\\database\\database.csproj": {
+                "projectPath": "C:\\Users\\Luan Fonseca\\Desktop\\Codigo do Futuro\\Crud-Produto\\database\\database.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

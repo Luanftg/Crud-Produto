@@ -10,3 +10,6 @@ C:\Users\Luan Fonseca\Desktop\Codigo do Futuro\Crud-Produto\negocio\obj\Debug\ne
 C:\Users\Luan Fonseca\Desktop\Codigo do Futuro\Crud-Produto\negocio\obj\Debug\net7.0\refint\negocio.dll
 C:\Users\Luan Fonseca\Desktop\Codigo do Futuro\Crud-Produto\negocio\obj\Debug\net7.0\negocio.pdb
 C:\Users\Luan Fonseca\Desktop\Codigo do Futuro\Crud-Produto\negocio\obj\Debug\net7.0\ref\negocio.dll
+C:\Users\Luan Fonseca\Desktop\Codigo do Futuro\Crud-Produto\negocio\bin\Debug\net7.0\database.dll
+C:\Users\Luan Fonseca\Desktop\Codigo do Futuro\Crud-Produto\negocio\bin\Debug\net7.0\database.pdb
+C:\Users\Luan Fonseca\Desktop\Codigo do Futuro\Crud-Produto\negocio\obj\Debug\net7.0\negocio.csproj.CopyComplete

@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net7.0": {}
+    "net7.0": {
+      "database/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "compile": {
+          "bin/placeholder/database.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/database.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "database/1.0.0": {
+      "type": "project",
+      "path": "../database/database.csproj",
+      "msbuildProject": "../database/database.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net7.0": []
+    "net7.0": [
+      "database >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Luan Fonseca\\.nuget\\packages\\": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Luan Fonseca\\Desktop\\Codigo do Futuro\\Crud-Produto\\database\\database.csproj": {
+              "projectPath": "C:\\Users\\Luan Fonseca\\Desktop\\Codigo do Futuro\\Crud-Produto\\database\\database.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

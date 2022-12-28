@@ -213,6 +213,9 @@
         }
       },
       "negocio/1.0.0": {
+        "dependencies": {
+          "database": "1.0.0"
+        },
         "runtime": {
           "negocio.dll": {}
         }
