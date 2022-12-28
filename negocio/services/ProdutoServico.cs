@@ -19,10 +19,16 @@ public class ProdutoServico
         repositorio.Salvar(produto);
     }
 
-    public List<Produto> BuscarTodos()
+    public List<Produto> BuscarTodos(string criterio = "")
     {
+
         List<Produto>? listaDeProduto = new List<Produto>();
-        listaDeProduto = repositorio.BuscarTodos();
+        if(string.IsNullOrEmpty(criterio))
+        {
+            listaDeProduto = repositorio.BuscarTodos();
+        } else {
+            listaDeProduto = repositorio.BuscarTodos(criterio);
+        }
         return listaDeProduto;
     }
 

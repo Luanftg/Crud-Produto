@@ -16555,6 +16555,11 @@
   "RootNamespace": "web",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Luan Fonseca\\Desktop\\Codigo do Futuro\\Crud-Produto\\web\\Views\\Home\\ProdutosVencidos.cshtml",
+      "TargetPath": "Views\\Home\\ProdutosVencidos.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Luan Fonseca\\Desktop\\Codigo do Futuro\\Crud-Produto\\web\\Views\\Produtos\\Novo.cshtml",
       "TargetPath": "Views\\Produtos\\Novo.cshtml",
       "FileKind": "mvc"

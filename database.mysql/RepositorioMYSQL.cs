@@ -44,15 +44,16 @@ public class RepositorioMYSQL<T> : IRepositorio<T>
             {
                 string nome = this.NomeDaPropriedade(prop);
                 if(nome == "Id") continue;
-                if(nome.Contains("data"))
+                if(nome.Contains("data") || nome.Contains("created")|| nome.Contains("updated"))
                 {
                     var data = Convert.ToDateTime(prop.GetValue(obj)).ToString("yyyy-MM-dd HH:MM:ss");
                     valoresArray.Add($"'{data}'");
                 } else {
                     valoresArray.Add($"'{prop.GetValue(obj)}'");
                 }
+
                 colunasArray.Add(nome);
-                updateArray.Add($"${nome}='{prop.GetValue(obj)}'");
+                updateArray.Add($"{nome}='{prop.GetValue(obj)}'");
             }
 
             string colunas = string.Join(", ", colunasArray.ToArray());
@@ -64,7 +65,9 @@ public class RepositorioMYSQL<T> : IRepositorio<T>
             int? id = Convert.ToInt32(typeof(T).GetProperty("Id")?.GetValue(obj));
             if(id > 0)
                 query = $"update {this.NomeDaTabela()} set {update} where id = {id};";
-
+            System.Console.WriteLine("----------------");
+            System.Console.WriteLine(query);
+            System.Console.WriteLine("----------------");
             var command = new MySqlCommand(query, conn);
             command.ExecuteNonQuery();
 

@@ -45,4 +45,14 @@ public class HomeController : Controller
         return View();
     }
 
+    [Route("/produtos/produtos-vencidos")]
+    public IActionResult ProdutosVencidos()
+    {
+        var dataAtual = DateTime.Now.ToString("yyyy-MM-dd HH:MM:ss");
+        //Console.WriteLine(dataAtual);
+        var produtosVencidos = produtoServico.BuscarTodos($"data_vencimento<'{dataAtual}';");
+        ViewBag.produtosVencidos = produtosVencidos;
+        return View();
+    }
+
 }
