@@ -22,6 +22,24 @@ public class HomeController : Controller
             quantidade += produto.Quantidade;
         }
         int? quantidadeDeItensNoEstoque = quantidade;
+
+        var dataAtual =  DateTime.Now;
+        var data3dias = dataAtual.AddDays(3);
+        int produtosVencidos=0;
+        int produtosAVencerEm3Dias=0;
+         foreach (Produto produto in listaDeProdutos)
+        {
+            if(produto.data_vencimento < dataAtual)
+            {
+                produtosVencidos +=1;
+            }
+            if(produto.data_vencimento > dataAtual && produto.data_vencimento < data3dias)
+            {
+                produtosAVencerEm3Dias +=1;
+            }
+        }
+        ViewBag.produtosAVencerEm3Dias = produtosAVencerEm3Dias;
+        ViewBag.produtosVencidos = produtosVencidos;
         ViewBag.quantidadeDeProdutos = quantidadeDeProdutos;
         ViewBag.quantidadeDeItensNoEstoque = quantidadeDeItensNoEstoque;
         return View();

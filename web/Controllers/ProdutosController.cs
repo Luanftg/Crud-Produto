@@ -35,6 +35,14 @@ public class ProdutosController : Controller
         return Redirect("/produtos");
     }
     
+    [Route("/produtos/{id}/editar")]
+    public IActionResult Editar([FromRoute] int id)
+    {
+        var produto = produtoServico.BuscarPorId(id);
+        ViewBag.produto = produto;
+        return View();
+    }
+    
      [Route("/produtos/{id}/deletar")]
     public IActionResult Apagar([FromRoute] int id)
     {

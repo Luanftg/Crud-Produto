@@ -16585,6 +16585,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\Luan Fonseca\\Desktop\\Codigo do Futuro\\Crud-Produto\\web\\Views\\Produtos\\Editar.cshtml",
+      "TargetPath": "Views\\Produtos\\Editar.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Luan Fonseca\\Desktop\\Codigo do Futuro\\Crud-Produto\\web\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
