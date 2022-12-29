@@ -28,7 +28,7 @@ Após o CRUD, criar algumas estatisticas para auxiliar o usuário. na home page*
 
 ## Abstração do Sistema
 
-![Alt text](abstracao.png)
+![Alt text](assets/abstracao.png)
 
 ### Arquitetura Inicial
 
