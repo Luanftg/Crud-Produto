@@ -6,7 +6,8 @@ using negocio.models;
 namespace database.mysql;
 public class RepositorioMYSQL<T> : IRepositorio<T>
 {
-    public readonly string? conexao = Environment.GetEnvironmentVariable("CODIGO_MYSQL");
+    // public readonly string? conexao = Environment.GetEnvironmentVariable("CODIGO_MYSQL");
+    public readonly string? conexao = "Server=localhost;Database=crud_produtos;User Id=root;Password=Luan_17101988";
 
     private string NomeDaTabela()
     {
@@ -48,26 +49,24 @@ public class RepositorioMYSQL<T> : IRepositorio<T>
                 {
                     var data = Convert.ToDateTime(prop.GetValue(obj)).ToString("yyyy-MM-dd HH:MM:ss");
                     valoresArray.Add($"'{data}'");
+                    updateArray.Add($"{nome}='{data}'");
                 } else {
                     valoresArray.Add($"'{prop.GetValue(obj)}'");
+                    updateArray.Add($"{nome}='{prop.GetValue(obj)}'");
                 }
-
                 colunasArray.Add(nome);
-                updateArray.Add($"{nome}='{prop.GetValue(obj)}'");
             }
 
             string colunas = string.Join(", ", colunasArray.ToArray());
             string valores = string.Join(", ", valoresArray.ToArray());
             string update = string.Join(", ", updateArray.ToArray());
 
-
-            string query = $"insert into {this.NomeDaTabela()} ({colunas})values({valores});";
+            string query = $"insert into {this.NomeDaTabela()} ({colunas}) values ({valores});";
             int? id = Convert.ToInt32(typeof(T).GetProperty("Id")?.GetValue(obj));
             if(id > 0)
+            {
                 query = $"update {this.NomeDaTabela()} set {update} where id = {id};";
-            System.Console.WriteLine("----------------");
-            System.Console.WriteLine(query);
-            System.Console.WriteLine("----------------");
+            }
             var command = new MySqlCommand(query, conn);
             command.ExecuteNonQuery();
 
@@ -81,10 +80,10 @@ public class RepositorioMYSQL<T> : IRepositorio<T>
          using(var conn = new MySqlConnection(conexao))
         {
             conn.Open();
+
             var query = $"""select * from {this.NomeDaTabela()} """;
             if (!string.IsNullOrEmpty(criterio))
                 query += $"where {criterio};";
-
 
             MySqlCommand command = new MySqlCommand(query, conn);
             MySqlDataReader dataReader = command.ExecuteReader();
@@ -109,7 +108,6 @@ public class RepositorioMYSQL<T> : IRepositorio<T>
 
     public void ApagarPorId(int id)
     {
-        /* REFATORAR ID */
         var query = $"delete from {NomeDaTabela()} where id={id};";
         using(var conn = new MySqlConnection(conexao))
         {
@@ -122,9 +120,9 @@ public class RepositorioMYSQL<T> : IRepositorio<T>
 
     public T? BuscaPorId(int id)
     {
-      var objetos = this.BuscarTodos($"id = {id}");
-        if (objetos.Count == 0) 
+      List<T> listaDeObjetos = this.BuscarTodos($"id = {id}");
+        if (listaDeObjetos.Count == 0) 
             return default(T);
-        return objetos[0];
+        return listaDeObjetos[0];
     }
 }
