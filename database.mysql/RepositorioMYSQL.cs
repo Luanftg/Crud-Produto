@@ -6,8 +6,8 @@ using negocio.models;
 namespace database.mysql;
 public class RepositorioMYSQL<T> : IRepositorio<T>
 {
-    // public readonly string? conexao = Environment.GetEnvironmentVariable("CODIGO_MYSQL");
-    public readonly string? conexao = "Server=localhost;Database=crud_produtos;User Id=root;Password=Luan_17101988";
+    public readonly string? conexao = Environment.GetEnvironmentVariable("CODIGO_MYSQL");
+ 
 
     private string NomeDaTabela()
     {
